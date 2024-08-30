@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  grid-template-rows: 30px 30px 1fr;
+  grid-template-areas: 
+  "header header"
+  "navbar navbar"
+  "courses-list sidebar";
+  grid-gap: 20px;
+}
+
+.header {
+  grid-area: header;
+  color: green;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.courses-list {
+  grid-area: courses-list;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.class-list-heading {
+  color: green;
+}
+
+.image {
+  background-color: green;
+  height: 100px;
+}
+
+.line-separator {
+  background-color: white;
+  height: 2px;
+}
+
+.course {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
