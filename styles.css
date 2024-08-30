@@ -83,3 +83,36 @@ body {
   gap: 10px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 750px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 30px 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "courses-list"
+    "sidebar";
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 80px 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "courses-list"
+    "sidebar";
+    grid-gap: 20px;
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
